@@ -153,10 +153,6 @@ import Cardano.Ledger.EpochBoundary (
   ssStakeMarkPoolDistrL,
   ssStakeSetL,
  )
-import Cardano.Ledger.Shelley.LedgerState.IncrementalStake
-import Cardano.Ledger.Shelley.LedgerState.NewEpochState
-import Cardano.Ledger.Shelley.LedgerState.PulsingReward
-import Cardano.Ledger.Shelley.LedgerState.Types
 import Cardano.Ledger.Shelley.PParams (pvCanFollow)
 import Cardano.Ledger.Shelley.RewardUpdate
 import Cardano.Ledger.Shelley.Rules.Ppup (PPUPPredFailure, ShelleyGovState (..))
