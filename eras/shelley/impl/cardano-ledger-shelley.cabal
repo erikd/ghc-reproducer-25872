@@ -20,23 +20,8 @@ flag asserts
 
 library
     exposed-modules:
-        Cardano.Ledger.Chain
-        Cardano.Ledger.Shelley
-        Cardano.Ledger.Shelley.AdaPots
-        Cardano.Ledger.Shelley.BlockChain
-        Cardano.Ledger.Shelley.Core
-        Cardano.Ledger.Shelley.Genesis
-        Cardano.Ledger.Shelley.Governance
-        Cardano.Ledger.Shelley.HardForks
-        Cardano.Ledger.Shelley.LedgerState
-        Cardano.Ledger.Shelley.PoolRank
         Cardano.Ledger.Shelley.PParams
-        Cardano.Ledger.Shelley.Rewards
-        Cardano.Ledger.Shelley.RewardUpdate
         Cardano.Ledger.Shelley.Scripts
-        Cardano.Ledger.Shelley.StabilityWindow
-        Cardano.Ledger.Shelley.Rules
-        Cardano.Ledger.Shelley.Translation
         Cardano.Ledger.Shelley.Tx
         Cardano.Ledger.Shelley.Tx.Internal
         Cardano.Ledger.Shelley.TxAuxData
@@ -44,7 +29,6 @@ library
         Cardano.Ledger.Shelley.TxCert
         Cardano.Ledger.Shelley.TxOut
         Cardano.Ledger.Shelley.TxWits
-        Cardano.Ledger.Shelley.UTxO
 
     hs-source-dirs:   src
     other-modules:
@@ -64,21 +48,12 @@ library
         cardano-data ^>=1.2.2,
         cardano-ledger-binary ^>=1.4,
         cardano-ledger-core ^>=1.15,
-        cardano-slotting,
-        vector-map ^>=1.1,
         containers,
-        data-default-class,
         deepseq,
-        groups,
         heapwords,
-        mtl,
         microlens,
         nothunks,
-        quiet,
-        set-algebra >=1.0,
         cardano-strict-containers,
-        text,
-        time,
 
     if flag(asserts)
         ghc-options: -fno-ignore-asserts

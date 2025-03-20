@@ -29,9 +29,7 @@ packages:
   eras/shelley/impl
   libs/cardano-ledger-core
   libs/cardano-ledger-binary
-  libs/small-steps
   libs/cardano-data
-  libs/set-algebra
   libs/vector-map
 
 program-options
